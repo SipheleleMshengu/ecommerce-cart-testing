@@ -1,2 +1,10 @@
-This project demonstrates the use of Selenium WebDriver to automate the testing of an e-commerce shopping cart. 
-The goal is to validate the functionality of key features such as adding items to the cart, removing items, and verifying the cart's contents.
+Project Overview
+
+The purpose of this project is to implement automated tests for a basic e-commerce shopping cart. The following functionalities are tested:
+
+    Adding products to the cart
+    Removing products from the cart
+    Verifying the correct product, price, and total in the cart
+    Testing across multiple browsers (e.g., Chrome, Firefox)
+
+These scenarios are essential for testing e-commerce websites, and by automating them, this project demonstrates the power of Selenium WebDriver for test automation.
