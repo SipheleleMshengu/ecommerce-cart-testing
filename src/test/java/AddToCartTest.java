@@ -79,6 +79,14 @@ public class AddToCartTest {
         wait.until(ExpectedConditions.titleContains("Search"));
     }
 
+    /**
+     * Views the search results page for the specified search text.
+     * Verifies the page title matches the expected title for the search results page.
+     * Waits for the product grid to load on the page before proceeding.
+     *
+     * @param driver the WebDriver instance used to interact with the web page
+     * @param text the search text used to generate the search results page
+     */
     private void viewSearchResultsPage(WebDriver driver, String text) {
         String title = driver.getTitle();
         Assertions.assertEquals("nopCommerce demo store. Search", title, "Title should match search results");
