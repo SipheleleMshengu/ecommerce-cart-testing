@@ -66,6 +66,10 @@ public class AddToCartTest {
         searchField.sendKeys(text);
     }
 
+    /**
+     * Clicks the search button on the store's search page and waits for the search results page to load.
+     * @param driver the WebDriver instance used to interact with the web page
+     */
     private void clickSearchButton(WebDriver driver) {
         WebElement searchButton = driver.findElement(By.xpath("/html/body/div[6]/div[1]/div[2]/div[2]/form/button"));
         searchButton.click();
