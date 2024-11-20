@@ -1,4 +1,4 @@
-Here’s the updated README with the added information about Selenium and JUnit:
+
 Project Overview
 
 The purpose of this project is to implement automated tests for a basic e-commerce shopping cart. The following functionalities are tested:
