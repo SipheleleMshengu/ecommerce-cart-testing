@@ -1,15 +1,17 @@
-
 Project Overview
 
-The purpose of this project is to implement automated tests for a basic e-commerce shopping cart. The following functionalities are tested:
+This project showcases automated testing for a basic e-commerce shopping cart. It aims to verify key functionalities that are essential for an efficient and user-friendly shopping experience. By automating these scenarios, the project highlights the capabilities of Selenium WebDriver and JUnit for end-to-end test automation.
+Key Features Tested
 
-    Adding products to the cart
-    Removing products from the cart
-    Verifying the correct product, price, and total in the cart
+    Adding Products to the Cart
+    Verifies that products can be successfully added to the shopping cart.
 
+    Removing Products from the Cart
+    Ensures users can remove items from the cart and that the cart reflects the updated total.
 
-These scenarios are essential for testing e-commerce websites, and by automating them, this project demonstrates the power of Selenium WebDriver for test automation.
-Tools and Frameworks Used
+    Cart Verification
+    Confirms that:
+        The correct product(s) are displayed in the cart.
+        Prices are accurate for individual items and the total price is calculated correctly.
 
-    Selenium WebDriver: Used for automating the web browser and interacting with the e-commerce website.
-    JUnit 5: Used as the testing framework to write and organize test cases.
+These tests are critical for maintaining the reliability and accuracy of an e-commerce platform.
