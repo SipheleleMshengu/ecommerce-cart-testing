@@ -13,6 +13,10 @@ public class AddToCartTest {
     private static WebDriver driver;
     private static String baseUrl;
 
+    /**
+     * Initializes the WebDriver instance and sets up the test environment.
+     * The WebDriver is set to maximize the browser window and set an implicit wait of 10 seconds.
+     */
     @BeforeAll
     public static void setUp() {
         baseUrl = "https://demo.nopcommerce.com/";
@@ -21,6 +25,7 @@ public class AddToCartTest {
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 
     }
+
 
     @Test
     public void searchJourney() {
@@ -34,6 +39,12 @@ public class AddToCartTest {
         }
     }
 
+    /**
+     * Navigates to the store's homepage and verifies the page title.
+     * Waits for the search box to be present on the page before proceeding.
+     *
+     * @param driver the WebDriver instance used to interact with the web page
+     */
     private void openStoreSearchPage(WebDriver driver) {
         driver.navigate().to(baseUrl);
         String title = driver.getTitle();
@@ -44,6 +55,12 @@ public class AddToCartTest {
         wait.until(ExpectedConditions.presenceOfElementLocated(By.id("small-searchterms"))); // Wait for the search box
     }
 
+    /**
+     * Enters the specified search text into the search field on the store's search page.
+     *
+     * @param driver the WebDriver instance used to interact with the web page
+     * @param text the text to be entered into the search field
+     */
     private void enterSearchText(WebDriver driver, String text) {
         WebElement searchField = driver.findElement(By.xpath("//*[@id=\"small-searchterms\"]"));
         searchField.sendKeys(text);
