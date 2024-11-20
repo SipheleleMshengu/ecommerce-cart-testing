@@ -16,8 +16,6 @@ Key Features Tested
 
 These tests are critical for maintaining the reliability and accuracy of an e-commerce platform.
 
-Here's an expanded version of your README to make it more comprehensive and beginner-friendly:
-Project Overview
 
 This project showcases automated testing for a basic e-commerce shopping cart. It aims to verify key functionalities that are essential for an efficient and user-friendly shopping experience. By automating these scenarios, the project highlights the capabilities of Selenium WebDriver and JUnit for end-to-end test automation.
 Key Features Tested
