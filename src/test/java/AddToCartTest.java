@@ -76,7 +76,13 @@ public class AddToCartTest {
 
 
         driver.get("https://demo.nopcommerce.com/apple-iphone-15-128gb");
+    
+    private void clickAddToCartButton(WebDriver driver) {
+        driver.findElement(By.cssSelector("#add-to-cart-button-47")).click();
+    }
+
         
+    }
         // Explicit wait to ensure the search results page is loaded
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         wait.until(ExpectedConditions.titleContains("Search"));
@@ -94,10 +100,8 @@ public class AddToCartTest {
         String title = driver.getTitle();
         Assertions.assertEquals("nopCommerce demo store. Search", title, "Title should match search results");
 
-    
-       
-       
-       
+
+
         // Explicit wait to ensure the results page is visible and ready
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//div[@class='product-grid']"))); // Wait for the product grid to load
